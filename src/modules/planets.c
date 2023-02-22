@@ -1064,6 +1064,9 @@ static void planet_render_label(
     s = point_size * 0.9;
     s = fmax(s, radius);
 
+    if(stricmp("Sun",name)==0) name="太阳"
+    if(stricmp("earth",name)==0) name="地球"
+    if(stricmp("moon",name)==0) name="月球"
     labels_add_3d(name, FRAME_ICRF, pos,
                   false, s + 4, FONT_SIZE_BASE,
                   selected ? white : label_color, 0, 0,
