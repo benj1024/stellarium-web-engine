@@ -1064,17 +1064,17 @@ static void planet_render_label(
     s = point_size * 0.9;
     s = fmax(s, radius);
 
-    if(stricmp("Sun",name)==0) name="太阳";
-    if(stricmp("earth",name)==0) name="地球";
-    if(stricmp("moon",name)==0) name="月球";
-    if(stricmp("mercury",name)==0) name="水星";
-    if(stricmp("venus",name)==0) name="金星";
-    if(stricmp("mars",name)==0) name="火星";
-    if(stricmp("jupiter",name)==0) name="木星";
-    if(stricmp("saturn",name)==0) name="土星";
-    if(stricmp("uranus",name)==0) name="天王星";
-    if(stricmp("neptune",name)==0) name="海王星";
-    if(stricmp("pluto",name)==0) name="冥王星";
+    if(strcasecmp("Sun",name)==0) name="太阳";
+    if(strcasecmp("earth",name)==0) name="地球";
+    if(strcasecmp("moon",name)==0) name="月球";
+    if(strcasecmp("mercury",name)==0) name="水星";
+    if(strcasecmp("venus",name)==0) name="金星";
+    if(strcasecmp("mars",name)==0) name="火星";
+    if(strcasecmp("jupiter",name)==0) name="木星";
+    if(strcasecmp("saturn",name)==0) name="土星";
+    if(strcasecmp("uranus",name)==0) name="天王星";
+    if(strcasecmp("neptune",name)==0) name="海王星";
+    if(strcasecmp("pluto",name)==0) name="冥王星";
     labels_add_3d(name, FRAME_ICRF, pos,
                   false, s + 4, FONT_SIZE_BASE,
                   selected ? white : label_color, 0, 0,
