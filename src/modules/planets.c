@@ -1064,7 +1064,7 @@ static void planet_render_label(
     s = point_size * 0.9;
     s = fmax(s, radius);
 
-    if(strcasecmp("Sun",name)==0) name="太阳";
+    if(strcasecmp("Sun",name)==0) name="";
     if(strcasecmp("earth",name)==0) name="地球";
     if(strcasecmp("moon",name)==0) name="月球";
     if(strcasecmp("mercury",name)==0) name="水星";
