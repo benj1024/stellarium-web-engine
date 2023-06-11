@@ -1,14 +1,6 @@
 // Auto generated from tools/makeassets.py
 
 static const unsigned char DATA_planets_ini[26121] __attribute__((aligned(4))) =
-    "[sun]\n"
-    "type = Sun\n"
-    "color = 1.0, 0.98, 0.97\n"
-    "radius = 696000 km\n"
-    "vmag = -26.74\n"
-    "horizons_id = 10\n"
-    "mass = 1.988544e+30 kg\n"
-    "\n"
     "[mercury]\n"
     "type = Pla\n"
     "parent = sun\n"
