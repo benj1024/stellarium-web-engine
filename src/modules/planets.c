@@ -1289,7 +1289,7 @@ static void planet_render(const planet_t *planet, const painter_t *painter_)
         .obj = &planet->obj,
     };
     painter.flags |= PAINTER_ENABLE_DEPTH;
-    paint_3d_points(&painter, 1, &point);
+       if (planet->id != SUN) paint_3d_points(&painter, 1, &point);
 
     if (model_alpha > 0) {
         planet_render_model(planet, r_scale, model_alpha, &painter);
