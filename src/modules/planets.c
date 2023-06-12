@@ -1306,9 +1306,9 @@ static void planet_render(const planet_t *planet, const painter_t *painter_)
         // Modulate halo opacity according to sun's altitude
         // This is ad-hoc code to be replaced when proper extinction is
         // computed.
-        vec4_set(color, 1, 1, 1, fabs(pos[2]));
-        paint_texture(&painter, planets->halo_tex, NULL, p_win, 200.0, color,
-                      0);
+        // vec4_set(color, 1, 1, 1, fabs(pos[2]));
+        // paint_texture(&painter, planets->halo_tex, NULL, p_win, 200.0, color,
+        //               0);
     }
 }
 
