@@ -71,7 +71,7 @@ static int cardinal_render(obj_t *obj, const painter_t *painter)
         _painter.color[2] = color[2];
         _painter.color[3] = c->visible.value;
         _painter.lines.width = 4;
-        paint_2d_ellipse(&_painter, NULL, 0, p, VEC(1, 1), NULL);
+        // paint_2d_ellipse(&_painter, NULL, 0, p, VEC(1, 1), NULL);
         labels_add_3d(sys_translate("gui", POINTS[i].text), FRAME_OBSERVED,
                       POINTS[i].pos, true, 0, size, color, 0,
                       ALIGN_CENTER | ALIGN_TOP, TEXT_BOLD, 0, NULL);
